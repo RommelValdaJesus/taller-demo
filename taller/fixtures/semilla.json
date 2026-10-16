@@ -1,0 +1,109 @@
+[
+{
+  "model": "taller.mecanico",
+  "pk": 1,
+  "fields": {
+    "nombre": "Carlos Quispe",
+    "especialidad": "Motor"
+  }
+},
+{
+  "model": "taller.mecanico",
+  "pk": 2,
+  "fields": {
+    "nombre": "Marta Flores",
+    "especialidad": "Electricidad"
+  }
+},
+{
+  "model": "taller.vehiculo",
+  "pk": 1,
+  "fields": {
+    "placa": "1234-ABC",
+    "marca": "Toyota",
+    "modelo": "Hilux",
+    "anio": 2018,
+    "propietario": "Luis Vargas",
+    "telefono": "71234567"
+  }
+},
+{
+  "model": "taller.vehiculo",
+  "pk": 2,
+  "fields": {
+    "placa": "5678-XYZ",
+    "marca": "Suzuki",
+    "modelo": "Swift",
+    "anio": 2015,
+    "propietario": "Ana Choque",
+    "telefono": "72345678"
+  }
+},
+{
+  "model": "taller.vehiculo",
+  "pk": 3,
+  "fields": {
+    "placa": "9012-DEF",
+    "marca": "Nissan",
+    "modelo": "Sentra",
+    "anio": 2020,
+    "propietario": "Pedro Rojas",
+    "telefono": "73456789"
+  }
+},
+{
+  "model": "taller.orden",
+  "pk": 1,
+  "fields": {
+    "vehiculo": 1,
+    "mecanico": 1,
+    "descripcion": "Cambio de aceite y filtros",
+    "estado": "Entregado",
+    "fecha_ingreso": "2026-10-01"
+  }
+},
+{
+  "model": "taller.orden",
+  "pk": 2,
+  "fields": {
+    "vehiculo": 1,
+    "mecanico": 1,
+    "descripcion": "Revisión de frenos",
+    "estado": "En reparación",
+    "fecha_ingreso": "2026-10-12"
+  }
+},
+{
+  "model": "taller.orden",
+  "pk": 3,
+  "fields": {
+    "vehiculo": 2,
+    "mecanico": 2,
+    "descripcion": "Falla en alternador",
+    "estado": "Recibido",
+    "fecha_ingreso": "2026-10-12"
+  }
+},
+{
+  "model": "taller.orden",
+  "pk": 4,
+  "fields": {
+    "vehiculo": 3,
+    "mecanico": 2,
+    "descripcion": "Cambio de batería",
+    "estado": "Listo",
+    "fecha_ingreso": "2026-10-10"
+  }
+},
+{
+  "model": "taller.orden",
+  "pk": 5,
+  "fields": {
+    "vehiculo": 3,
+    "mecanico": 1,
+    "descripcion": "Alineación y balanceo",
+    "estado": "Recibido",
+    "fecha_ingreso": "2026-10-12"
+  }
+}
+]
