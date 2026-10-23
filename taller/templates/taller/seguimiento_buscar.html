@@ -1,0 +1,9 @@
+{% extends "taller/base.html" %}
+{% block titulo %}Seguimiento{% endblock %}
+{% block contenido %}
+<h1>Consultar seguimiento</h1>
+<form method="get" action="{% url 'seguimiento_buscar' %}">
+    <input type="text" name="codigo" placeholder="Escribe tu código" required>
+    <button type="submit">Consultar</button>
+</form>
+{% endblock %}

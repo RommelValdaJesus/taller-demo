@@ -59,7 +59,8 @@
     "mecanico": 1,
     "descripcion": "Cambio de aceite y filtros",
     "estado": "Entregado",
-    "fecha_ingreso": "2026-10-01"
+    "fecha_ingreso": "2026-10-01",
+    "codigo": "KD9IES"
   }
 },
 {
@@ -70,7 +71,8 @@
     "mecanico": 1,
     "descripcion": "Revisión de frenos",
     "estado": "En reparación",
-    "fecha_ingreso": "2026-10-12"
+    "fecha_ingreso": "2026-10-12",
+    "codigo": "K66XN3"
   }
 },
 {
@@ -81,7 +83,8 @@
     "mecanico": 2,
     "descripcion": "Falla en alternador",
     "estado": "Recibido",
-    "fecha_ingreso": "2026-10-12"
+    "fecha_ingreso": "2026-10-12",
+    "codigo": "5ZZ9C5"
   }
 },
 {
@@ -92,7 +95,8 @@
     "mecanico": 2,
     "descripcion": "Cambio de batería",
     "estado": "Listo",
-    "fecha_ingreso": "2026-10-10"
+    "fecha_ingreso": "2026-10-10",
+    "codigo": "F7X334"
   }
 },
 {
@@ -103,7 +107,8 @@
     "mecanico": 1,
     "descripcion": "Alineación y balanceo",
     "estado": "Recibido",
-    "fecha_ingreso": "2026-10-12"
+    "fecha_ingreso": "2026-10-12",
+    "codigo": "KLFU4V"
   }
 }
 ]

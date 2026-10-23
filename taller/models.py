@@ -1,6 +1,15 @@
+import random
 from datetime import date
 from django.db import models
- 
+
+# Sin 0/O ni 1/I para que el código no se confunda al leerlo o dictarlo
+ALFABETO = "ABCDEFGHIJKLMNPQRSTUVWXYZ23456789"
+
+def generar_codigo():
+    while True:
+        codigo = "".join(random.choices(ALFABETO, k=6))
+        if not Orden.objects.filter(codigo=codigo).exists():
+            return codigo
  
 class Mecanico(models.Model):
     nombre = models.CharField(max_length=80)
@@ -44,9 +53,15 @@ class Orden(models.Model):
     descripcion = models.CharField(max_length=200)
     estado = models.CharField(max_length=20, choices=ESTADOS, default="Recibido")
     fecha_ingreso = models.DateField(default=date.today)
- 
+    codigo = models.CharField(max_length=8, editable=False, verbose_name="Código")  # NUEVO
+
     class Meta:
         verbose_name_plural = "Órdenes"
- 
+
+    def save(self, *args, **kwargs):  # NUEVO
+        if not self.codigo:  # NUEVO
+            self.codigo = generar_codigo()  # NUEVO
+        super().save(*args, **kwargs)  # NUEVO
+
     def __str__(self):
-        return f"{self.vehiculo.placa}: {self.descripcion}"
+        return f'{self.vehiculo.placa}: {self.descripcion}'
